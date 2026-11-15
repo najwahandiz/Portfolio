@@ -1,0 +1,14 @@
+# Minimal black dashboard covers
+
+Generated with the built-in image-generation tool. Both are illustrative concepts with demo data. Website screenshots and personal project covers are unchanged.
+
+- `public/assets/at-workflow-black.png`
+- `public/assets/seo-analytics-black.png`
+
+## ATworkflow prompt
+
+Use case: ui-mockup. Portfolio cover, landscape 3:2. A very restrained BLACK desktop application interface for ATworkflow, focused on employee leave balances. Make this look like a carefully designed real small business tool, NOT an AI-generated dashboard template. Matte near-black #101113 background, dark-gray panels #191a1d, fine gray borders, white and muted gray text, one subtle lavender active indicator. Flat straight-on screenshot, edge-to-edge, no perspective, no device, no shadows, no gradients, no floating panels, no 3D, no glow. VERY LITTLE DATA. A thin left sidebar with small text labels Overview, Leave, Team. Top bar ATworkflow and a small 'Demo' badge. Main title 'Leave overview'. ONE summary card 'Available leave' with '14 days'. Below, ONE small clean table titled 'Recent requests' with just THREE rows, fictional names, simple date ranges, and understated Pending or Approved status text. No calendar, no charts, no avatars, no long tables, no multiple KPI cards. Lots of quiet negative space and disciplined alignment. Use normal compact professional sans-serif type, not huge display type. Tiny footer 'Illustrative concept · Demo data'. Professional understated black monochrome dashboard cover. No marketing copy. One image only.
+
+## SEO & Analytics prompt
+
+Use case: ui-mockup. Portfolio cover, landscape 3:2. A minimal BLACK web analytics desktop interface, a quiet professional editorial screenshot for a developer portfolio. Matte near-black #101113 background, dark gray #191a1d surface, thin neutral gray separators, white and gray text, a single muted lavender line chart. Flat straight-on edge-to-edge screenshot, no perspective, no device, no bright colors, no gradients, no glow, no 3D, no glossy effects. VERY LITTLE DATA, very simple. Thin left navigation sidebar with just Overview, Search, Performance. Top bar 'SEO & Analytics' with a small site selector 'AT Boost'. Main heading 'Website overview' and small date label 'Last 28 days'. ONE broad simple line chart labeled 'Organic traffic', sparse unlabeled y-axis ticks, only a few date labels, no filled area, no chart ornaments. Beneath it ONE slim row with two items 'Search visibility' and 'Form tracking', each with a tiny neutral status dot, no numeric KPI cards, no percentage improvements, no big tables. Large breathing room. Compact professional sans-serif typography. Small unobtrusive footer 'Illustrative concept · Demo data'. Make it look like a real simple reporting application rather than an AI dashboard collage. One image only.
