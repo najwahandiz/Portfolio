@@ -3,7 +3,7 @@
 import { motion, useMotionValue, useReducedMotion, useSpring } from 'motion/react';
 import type { PointerEvent } from 'react';
 
-export function ProjectSurface({children,featured=false}:{children:React.ReactNode;featured?:boolean}) {
+export function ProjectSurface({children,variant}:{children:React.ReactNode;variant:'internship'|'learning'}) {
   const reduced=useReducedMotion();
   const tiltX=useMotionValue(0),tiltY=useMotionValue(0),lift=useMotionValue(0);
   const spring={stiffness:170,damping:24,mass:.65};
@@ -16,7 +16,7 @@ export function ProjectSurface({children,featured=false}:{children:React.ReactNo
     lift.set(-7);
   }
   function reset(){tiltX.set(0);tiltY.set(0);lift.set(0);}
-  return <motion.article className={`project-card work-card ${featured?'featured':''}`} initial={false}
+  return <motion.article className={`project-card work-card compact-project ${variant}-project`} initial={false}
     style={reduced?undefined:{rotateX,rotateY,y,transformPerspective:1200}}
     onPointerMove={move} onPointerLeave={reset}
     onFocusCapture={()=>{if(!reduced)lift.set(-5)}}

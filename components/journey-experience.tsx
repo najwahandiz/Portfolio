@@ -23,13 +23,23 @@ function ChapterStep({chapter,index,active,onActive}:{chapter:Chapter;index:numb
 
 export function JourneyExperience({chapters}:{chapters:Chapter[]}){
   const ref=useRef<HTMLDivElement>(null);
+  const introRef=useRef<HTMLDivElement>(null);
   const [active,setActive]=useState(0);
   const [ready,setReady]=useState(false);
   const reduced=useReducedMotion();
   const {scrollYProgress}=useScroll({target:ref,offset:['start 50%','end 65%']});
   useEffect(()=>setReady(true),[]);
+  useEffect(()=>{
+    const intro=introRef.current;
+    if(!intro)return;
+    const resize=new ResizeObserver(()=>{
+      ref.current?.style.setProperty('--journey-intro-height',`${intro.getBoundingClientRect().height}px`);
+    });
+    resize.observe(intro);
+    return ()=>resize.disconnect();
+  },[]);
   return <div className="time-experience" ref={ref}>
-    <div className="time-intro">
+    <div className="time-intro" ref={introRef}>
       <p className="eyebrow">A LITTLE OF MY JOURNEY</p>
       <h2 id="journey-title">Let’s go back<br/><em>in time.</em></h2>
       <p className="time-intro-copy">From what I’m building today<br/>to where it all began.</p>
